@@ -1,0 +1,138 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#header>b{
+    min-width:100px !important;
+    padding: 10px 0;
+    border:1px solid #dfe4e9;
+    /* align-items: center; */
+    text-align: center;
+}
+#header{
+    display: flex;
+    
+}
+.row{
+    display: flex;
+}
+.row>b,.row>div{
+    border:1px solid #dfe4e9 ;
+    min-width:100px !important;
+    max-width: 100px;
+    padding: 10px 0;
+    text-align: center;
+}
+#header{
+    position: sticky;
+    top: 120px;
+    left: 0px;
+    width: fit-content;
+    background-color: white;
+    z-index:100;
+}
+#second{
+    position:sticky;
+    top:85px;
+    z-index: 1000;
+    background-color: white;
+}
+#header>b:first-child{
+    z-index:1000px;
+    position: sticky;
+    left:0;
+    top:0;
+    background-color: white;
+}
+.row>b{
+    position:sticky;
+    left: 0;
+    background-color: white;
+}
+::-webkit-scrollbar{
+    display: none;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#options{
+    display: flex;
+    gap:3rem;
+    margin: 10px;
+    padding: 7px;
+    align-items: center;
+    
+}
+#options>span{
+    background-color: gainsboro;
+    padding: 4px 15px;
+}
+#menus{
+    display: flex;
+    gap:15px;
+}
+.active-option{
+    background-color:gainsboro ;
+}
+#body>div{
+    height: 35px;
+}
+#body{
+    width: fit-content;
+}
+#uk{
+    /* color: white; */
+}
+
+#sizer{
+    width: 3%;
+    height: 3%;
+}
+#second{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+#second>span:first-child{
+    background-color: gainsboro;
+    padding: 4px 15px;
+    margin: 10px;
+}
+#fx{
+   min-width:88%;
+   height: 25px;
+   background-color: #f5f5f5ff;
+}
+#first{
+    width: 100%;
+    display: flex;
+    align-items: end;
+    position: sticky;
+    z-index: 1000;
+    top: 0px;
+    left: 0px;
+    
+}
+#first>button{
+    width:60px;
+    height: 25px;
+    background-color: #1d7e67;
+    border: none;
+    color: #dfe4e9;
+    font-size: medium;
+}
+#first{
+    background-color: #1d7e67;
+    height: 45px;
+}
+#first>button:hover{
+    background-color: white;
+    color: #1d7e67;
+}
+#options{
+    position: sticky;
+    z-index: 1000;
+    background-color: white;
+    top: 45px;
+    left: 0px;
+}
+
+  

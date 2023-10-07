@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>google sheet</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div id="first">
+        <button  class="btnf">File</button>
+        <button  class="btnf">Home</button>
+        <button  class="btnf">Insert</button>
+        <button  class="btnf">Layout</button>
+        <button  class="btnf">Help</button>
+     </div>
+     <div id="options">
+         
+         <div id="menus">
+             <span class="material-icons">
+                 content_copy
+                 </span>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShJCcih2KStpxCD1MDQnlIDvYPT6nOaUqEpg&usqp=CAU" alt="sizer" id="sizer">
+             <span class="material-icons">
+                 description
+                 </span>
+             <select onclick="changeFontFamily()" id="myselect">
+                 <option value="option1"  data-value="mono" >MonoSpaces</option>
+                 <option value="option2"  data-value="Arial" >Arial SanSrif</option>
+                 <option value="option3" data-value="popins"> Times New Roman</option>
+               </select>
+             <select onclick="changeFontSize()" id="fontsize">
+                 <option value="option12">12</option>
+                 <option value="option14">14</option>
+                 <option value="option16">16</option>
+                 <option value="option18">18</option>
+               </select>
+               
+              <div id="bold" onclick="onClickBold(this)">B</div>
+              <div id="italic" onclick="onClickItalic(this)">I</div>
+              <div id="underline" onclick="onClickUnderline(this)">U</div>
+              <div class="text-align" data-value="start" onclick="alignItem(this)"><span class="material-icons">
+                 format_align_left
+                 </span></div>
+              <div class="text-align" data-value="center" onclick="alignItem(this)"><span class="material-icons">
+                 format_align_center
+                 </span></div>
+             <div class="text-align" data-value="right" onclick="alignItem(this)"><span class="material-icons">
+                 format_align_right
+                 </span>  </div>     
+ 
+              <div>
+                 <label for="textcolor"><span class="material-icons">
+                     border_color
+                     </span></label>
+                 <input onchange="textColorChange(this)" type="color" id="textcolor" style="width:0px ;height: 0px;">
+              </div>
+ 
+ 
+              <div>
+                 <label for="textcolor"><span class="material-icons">
+                     format_color_fill
+                     </span></label>
+                 <input onchange="backgroundColorChange(this)" type="color"  style="width:0px ;height: 0px;">
+              </div>
+                       
+ 
+         </div>
+     </div>
+     <div id="second">
+         <span id="span1">Null</span>
+         <span ><i>Fx</i></span>
+         <div id="fx"></div>
+     </div>
+   
+   
+    <div id="header">
+        <b>Sr.No</b>
+    </div>
+    <section id="body">
+
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
